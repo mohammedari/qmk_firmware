@@ -5,9 +5,9 @@
 A split full-wireless 60% row-staggered keyboard with additional thumb keys.
 
 Keyboard Maintainer: [Kazuyuki Arimatsu](https://github.com/mohammedari)  
-Hardware Supported: Thumbsplit PCB v1.0, atmega32u4, nRF51822  
-Hardware Availability: [Thumbsplit PCB, case, and receiver](https://github.com/mohammedari/thumbsplit58-hardware)  
-Firmware for nordic MCUs: [SRC and precompiled](https://github.com/mohammedari/thumbsplit58-firmware)
+Hardware Supported: Thumbsplit58 PCB v1.0, atmega32u4, nRF51822  
+Hardware Availability: [Thumbsplit58 PCB and case](https://github.com/mohammedari/thumbsplit58-hardware), [Comet46 OLED display receiver](https://github.com/satt99/comet46-hardware)  
+Firmware for nordic MCUs: [Thumbsplit58 firmware](https://github.com/mohammedari/thumbsplit58-firmware)
 
 Make example for this keyboard (after setting up your build environment):
 
