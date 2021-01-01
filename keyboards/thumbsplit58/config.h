@@ -22,12 +22,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 /* USB Device descriptor parameter */
 
-#define VENDOR_ID       0xFEED
-#define PRODUCT_ID      0x6060
+#define VENDOR_ID       0x4B41 //KA
+#define PRODUCT_ID      0x5453 //TS
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    SatT
-#define PRODUCT         Comet46
-#define DESCRIPTION     qmk keyboard firmware for Comet46
+#define MANUFACTURER    Kazuyuki Arimatsu
+#define PRODUCT         Thumbsplit58
+#define DESCRIPTION     qmk keyboard firmware for Thumbsplit58
 
 /* key matrix size */
 #define MATRIX_ROWS 4
