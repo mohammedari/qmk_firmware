@@ -65,11 +65,14 @@ uint8_t mk_time_to_max = MOUSEKEY_TIME_TO_MAX;
 /* milliseconds between the initial key press and first repeated motion event (0-2550) */
 uint8_t mk_wheel_delay = MOUSEKEY_WHEEL_DELAY / 10;
 /* milliseconds between repeated motion events (0-255) */
+#ifndef MK_KINETIC_SPEED
 uint8_t mk_wheel_interval    = MOUSEKEY_WHEEL_INTERVAL;
+#endif
 uint8_t mk_wheel_max_speed   = MOUSEKEY_WHEEL_MAX_SPEED;
 uint8_t mk_wheel_time_to_max = MOUSEKEY_WHEEL_TIME_TO_MAX;
 
 #    ifndef MK_COMBINED
+#        ifndef MK_KINETIC_SPEED
 
 static uint8_t move_unit(void) {
     uint16_t unit;
@@ -107,8 +110,7 @@ static uint8_t wheel_unit(void) {
     return (unit > MOUSEKEY_WHEEL_MAX ? MOUSEKEY_WHEEL_MAX : (unit == 0 ? 1 : unit));
 }
 
-#    else /* #ifndef MK_COMBINED */
-#        ifndef MK_KINETIC_SPEED
+#        else /* #ifndef MK_KINETIC_SPEED */
 
 /*
  * Kinetic movement  acceleration algorithm
@@ -166,7 +168,8 @@ static uint8_t wheel_unit(void) {
     return 1;
 }
 
-#        else /* #ifndef MK_KINETIC_SPEED */
+#        endif /* #ifndef MK_KINETIC_SPEED */
+#    else /* #ifndef MK_COMBINED */
 
 static uint8_t move_unit(void) {
     uint16_t unit;
@@ -204,7 +207,6 @@ static uint8_t wheel_unit(void) {
     return (unit > MOUSEKEY_WHEEL_MAX ? MOUSEKEY_WHEEL_MAX : (unit == 0 ? 1 : unit));
 }
 
-#        endif /* #ifndef MK_KINETIC_SPEED */
 #    endif     /* #ifndef MK_COMBINED */
 
 void mousekey_task(void) {
