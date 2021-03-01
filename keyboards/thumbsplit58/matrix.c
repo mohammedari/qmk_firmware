@@ -137,13 +137,6 @@ matrix_row_t matrix_get_row(uint8_t row)
 
 void matrix_print(void)
 {
-    print_matrix_header();
-
-    for (uint8_t row = 0; row < MATRIX_ROWS; row++) {
-        phex(row); print(": ");
-        print_matrix_row(row);
-        print("\n");
-    }
 }
 
 uint8_t matrix_key_count(void)
