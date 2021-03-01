@@ -28,10 +28,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_I2C
 #define SSD1306OLED
 
-#define MOUSEKEY_DELAY             25
-#define MOUSEKEY_INTERVAL          25
-#define MOUSEKEY_MAX_SPEED         5
-#define MOUSEKEY_TIME_TO_MAX       5
+/* Kinetic mouse mode */
+#define MK_KINETIC_SPEED 
 
 #define TAPPING_TERM 150
 
