@@ -1,6 +1,6 @@
 # Thumbsplit58
 
-![Thumbsplit58](https://drive.google.com/uc?export=view&id=17JS1jw70OypABPZfpPL2eD20p4_cTaR5)
+![teaser](https://github.com/mohammedari/thumbsplit58-hardware/blob/main/doc/teaser.jpg?raw=true)
 
 A split full-wireless 60% row-staggered keyboard with additional thumb keys.
 
