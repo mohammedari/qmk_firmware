@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID   0x0000
 #define DEVICE_VER   0x0001
 #define MANUFACTURER Kazuyuki Arimatsu
-#define PRODUCT      thumbsplit58w
+#define PRODUCT      Thumbsplit58w
 
 /* key matrix size */
 #define MATRIX_ROWS 10
@@ -40,10 +40,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *                  ROW2COL = ROW = Anode (+), COL = Cathode (-, marked on diode)
  *
  */
-#define MATRIX_ROW_PINS { NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
-#define MATRIX_COL_PINS { NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN, NO_PIN }
-#define MATRIX_ROW_PINS_RIGHT { B6, B5, B4, D7, D6 }
-#define MATRIX_COL_PINS_RIGHT { F1, F4, F5, F6, F7, C7, C6 }
+#define MATRIX_ROW_PINS { B6, B5, B4, D7, D6 }
+#define MATRIX_COL_PINS { F1, F4, F5, F6, F7, C7, C6 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL */
@@ -60,8 +58,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SPLIT_MODS_ENABLE
 #define SPLIT_TRANSPORT_MIRROR
 
-#define RGBLIGHT_SPLIT
-#define RGBLED_SPLIT { 1, 1 }
+#define RGBLED_SPLIT { 28, 30 }
+#define SPLIT_USB_DETECT
 
 //#define LED_NUM_LOCK_PIN B0
 //#define LED_CAPS_LOCK_PIN B1
@@ -75,7 +73,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define RGB_DI_PIN F0
 #ifdef RGB_DI_PIN
-#    define RGBLED_NUM 1
+#    define RGBLED_NUM 58
 
 #    define RGBLIGHT_HUE_STEP 8
 #    define RGBLIGHT_SAT_STEP 8
