@@ -20,11 +20,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED
-#define PRODUCT_ID   0x0000
-#define DEVICE_VER   0x0001
-#define MANUFACTURER Kazuyuki Arimatsu
-#define PRODUCT      Thumbsplit58w
+#define VENDOR_ID       0x4B41 //KA
+#define PRODUCT_ID      0x5453 //TS
+#define DEVICE_VER      0x0101
+#define MANUFACTURER    Kazuyuki Arimatsu
+#define PRODUCT         Thumbsplit58w
 
 /* key matrix size */
 #define MATRIX_ROWS 10
